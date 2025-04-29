@@ -4,7 +4,7 @@ const sequelize = require('./config/database');
 const { User, Product, Cart, CartItem } = require('./models');
 require('dotenv').config();
 const authRoutes = require('./routes/auth');
-const productRoutes = require('./routes/products');
+const productRoutes = require('./routes/product');
 
 app.use(express.json());
 
