@@ -1,7 +1,6 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 
-
 const Cart = sequelize.define('Cart', {
   status: {
     type: DataTypes.ENUM('pending', 'complete'), 
@@ -11,3 +10,4 @@ const Cart = sequelize.define('Cart', {
 });
 
 module.exports = Cart;
+
